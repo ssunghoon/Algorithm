@@ -6,7 +6,6 @@ class Solution {
             multi *= num_list[i];
             squareOfSum += num_list[i];
         }
-        squareOfSum = squareOfSum * squareOfSum;
-        return multi < squareOfSum ? 1 : 0;
+        return multi < squareOfSum * squareOfSum ? 1 : 0;
     }
 }
