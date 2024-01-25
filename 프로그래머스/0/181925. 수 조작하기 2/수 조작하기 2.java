@@ -1,17 +1,17 @@
 class Solution {
     public String solution(int[] numLog) {
-        String answer = "";
+        StringBuilder answer = new StringBuilder();
         for (int i = 0; i < numLog.length - 1; i++) {
             if (numLog[i + 1] - numLog[i] == 1) {
-                answer += "w";
+                answer.append("w");
             } else if (numLog[i + 1] - numLog[i] == -1) {
-                answer += "s";
+                answer.append("s");
             } else if (numLog[i + 1] - numLog[i] == 10) {
-                answer += "d";
+                answer.append("d");
             } else if (numLog[i + 1] - numLog[i] == -10) {
-                answer += "a";
+                answer.append("a");
             }
         }
-        return answer;
+        return answer.toString();
     }
 }
